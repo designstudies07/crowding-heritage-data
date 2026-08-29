@@ -1,0 +1,56 @@
+{
+  "scope": "post hoc deterministic image-difference audit",
+  "reference": "each landmark's authored empty image",
+  "threshold": "mean absolute RGB-channel difference > 12 on the 0-255 scale",
+  "limitations": [
+    "not an independent perceptual manipulation check",
+    "not a visible-person count",
+    "not a person mask or architectural-occlusion estimate",
+    "cannot separate headcount, placement, salience, and retouching changes"
+  ],
+  "state_means": [
+    {
+      "state": "low",
+      "state_order": 1,
+      "mean_absolute_rgb_difference_0_255": 6.837938547134399,
+      "changed_pixel_share_threshold_12": 0.10390871951145117,
+      "lower_half_changed_pixel_share_threshold_12": 0.18482490679103683
+    },
+    {
+      "state": "moderate",
+      "state_order": 2,
+      "mean_absolute_rgb_difference_0_255": 10.93301796913147,
+      "changed_pixel_share_threshold_12": 0.15546017821837804,
+      "lower_half_changed_pixel_share_threshold_12": 0.2879177681661939
+    },
+    {
+      "state": "high",
+      "state_order": 3,
+      "mean_absolute_rgb_difference_0_255": 17.39018177986145,
+      "changed_pixel_share_threshold_12": 0.2519315563992186,
+      "lower_half_changed_pixel_share_threshold_12": 0.46972405658683536
+    }
+  ],
+  "monotonic_within_landmark": {
+    "cologne": {
+      "mean_absolute_rgb_difference": true,
+      "changed_pixel_share": true,
+      "lower_half_changed_pixel_share": true
+    },
+    "colosseum": {
+      "mean_absolute_rgb_difference": true,
+      "changed_pixel_share": true,
+      "lower_half_changed_pixel_share": true
+    },
+    "duomo": {
+      "mean_absolute_rgb_difference": true,
+      "changed_pixel_share": true,
+      "lower_half_changed_pixel_share": true
+    },
+    "notre_dame": {
+      "mean_absolute_rgb_difference": true,
+      "changed_pixel_share": true,
+      "lower_half_changed_pixel_share": true
+    }
+  }
+}

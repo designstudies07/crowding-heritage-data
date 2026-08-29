@@ -1,0 +1,159 @@
+{
+  "participants": 65,
+  "completed_trials": 260,
+  "trials_by_task": {
+    "feature": 130,
+    "visit": 130
+  },
+  "density_counts": {
+    "feature": {
+      "empty": 30,
+      "low": 35,
+      "moderate": 34,
+      "high": 31
+    },
+    "visit": {
+      "empty": 26,
+      "low": 25,
+      "moderate": 42,
+      "high": 37
+    }
+  },
+  "moderate_or_high_rate": {
+    "feature": 0.5,
+    "visit": 0.6076923076923076
+  },
+  "paired_visit_minus_feature": {
+    "moderate_or_high": {
+      "mean": 0.1076923076923077,
+      "bootstrap_95_ci": [
+        0.015384615384615385,
+        0.2
+      ],
+      "sign_flip_p_two_sided": 0.04254791490417019
+    },
+    "density_score_0_to_3": {
+      "mean": 0.18461538461538463,
+      "bootstrap_95_ci": [
+        -0.03076923076923077,
+        0.41538461538461546
+      ],
+      "sign_flip_p_two_sided": 0.12963374073251854
+    },
+    "selection_time_s": {
+      "mean": -1.9955461538461543,
+      "bootstrap_95_ci": [
+        -3.780221538461538,
+        -0.2250455769230785
+      ],
+      "sign_flip_p_two_sided": 0.030143939712120576
+    },
+    "control_usefulness_1_to_7": {
+      "mean": 0.24615384615384617,
+      "bootstrap_95_ci": [
+        -0.06923076923076923,
+        0.5538461538461539
+      ],
+      "sign_flip_p_two_sided": 0.14000571998856
+    }
+  },
+  "feature_accuracy": {
+    "correct": 94,
+    "n": 130,
+    "proportion": 0.7230769230769231,
+    "wilson_95_ci": [
+      0.6405947067150304,
+      0.7927538275213002
+    ],
+    "by_density": {
+      "empty": {
+        "correct": 23,
+        "n": 30,
+        "proportion": 0.7666666666666667,
+        "wilson_95_ci": [
+          0.5907167384187784,
+          0.8820761185551049
+        ]
+      },
+      "high": {
+        "correct": 23,
+        "n": 31,
+        "proportion": 0.7419354838709677,
+        "wilson_95_ci": [
+          0.5675386419056621,
+          0.8629829409360625
+        ]
+      },
+      "low": {
+        "correct": 24,
+        "n": 35,
+        "proportion": 0.6857142857142857,
+        "wilson_95_ci": [
+          0.5202023638793081,
+          0.8144915532573418
+        ]
+      },
+      "moderate": {
+        "correct": 24,
+        "n": 34,
+        "proportion": 0.7058823529411765,
+        "wilson_95_ci": [
+          0.5383109020528557,
+          0.8316536932957758
+        ]
+      }
+    },
+    "by_landmark": {
+      "cologne": {
+        "correct": 31,
+        "n": 34,
+        "proportion": 0.9117647058823529,
+        "wilson_95_ci": [
+          0.7703951343719113,
+          0.9695340563253514
+        ]
+      },
+      "colosseum": {
+        "correct": 12,
+        "n": 33,
+        "proportion": 0.36363636363636365,
+        "wilson_95_ci": [
+          0.2218717823524236,
+          0.5338382169773361
+        ]
+      },
+      "duomo": {
+        "correct": 28,
+        "n": 32,
+        "proportion": 0.875,
+        "wilson_95_ci": [
+          0.7193169451834978,
+          0.9502986561251991
+        ]
+      },
+      "notre_dame": {
+        "correct": 23,
+        "n": 31,
+        "proportion": 0.7419354838709677,
+        "wilson_95_ci": [
+          0.5675386419056621,
+          0.8629829409360625
+        ]
+      }
+    }
+  },
+  "selection_time_s_mean": {
+    "feature": 16.92486153846154,
+    "visit": 14.929315384615384
+  },
+  "switch_count_mean": {
+    "feature": 4.930769230769231,
+    "visit": 4.969230769230769
+  },
+  "final_ratings_mean": {
+    "final_usefulness": 5.8,
+    "final_ease": 5.892307692307693,
+    "final_representational_value": 5.6461538461538465,
+    "final_future_preference": 5.815384615384615
+  }
+}

@@ -1,0 +1,2084 @@
+{
+  "analysis_status": {
+    "density_model": "four-category ordinal mixed model; no dichotomized density test is treated as primary",
+    "trace_analyses": "exploratory",
+    "preregistration": "No contrast is characterized as preregistered or prespecified."
+  },
+  "sample": {
+    "participants": 65,
+    "trials": 260,
+    "trials_per_task": {
+      "visit": 130,
+      "feature": 130
+    }
+  },
+  "density_counts": {
+    "feature": {
+      "empty": 30,
+      "low": 35,
+      "moderate": 34,
+      "high": 31
+    },
+    "visit": {
+      "empty": 26,
+      "low": 25,
+      "moderate": 42,
+      "high": 37
+    }
+  },
+  "ordinal_mixed_model": {
+    "model": "cumulative logit mixed model with participant random intercept",
+    "outcome": "committed density (empty < low < moderate < high)",
+    "landmark_handling": "fixed effects (four stimulus scenes; Cologne reference)",
+    "quadrature_points": 17,
+    "n_trials": 260,
+    "n_participants": 65,
+    "converged": true,
+    "iterations": 23,
+    "negative_log_likelihood": 339.82163890548014,
+    "gradient_max": 7.358949005720206e-05,
+    "cutpoints": [
+      -1.5936697637826975,
+      -0.17282092507982094,
+      1.5214954368231564
+    ],
+    "participant_random_intercept_sd": 1.3145028272590773,
+    "coefficients": [
+      {
+        "term": "initial_density_per_level",
+        "estimate_log_odds": -0.08564023088595567,
+        "standard_error": 0.15948381296203712,
+        "odds_ratio": 0.9179244126747526,
+        "ci_95": [
+          0.671512422961987,
+          1.2547574677289128
+        ],
+        "wald_p_two_sided": 0.5912787741100738
+      },
+      {
+        "term": "visit_task",
+        "estimate_log_odds": 0.35475174998935716,
+        "standard_error": 0.23722348526161466,
+        "odds_ratio": 1.4258266488616187,
+        "ci_95": [
+          0.895657009602051,
+          2.269821606718879
+        ],
+        "wald_p_two_sided": 0.13480155953622225
+      },
+      {
+        "term": "visit_x_initial",
+        "estimate_log_odds": 0.13029207136676962,
+        "standard_error": 0.23198394244900594,
+        "odds_ratio": 1.1391610510660515,
+        "ci_95": [
+          0.7229696002330123,
+          1.7949411702064209
+        ],
+        "wald_p_two_sided": 0.5743595298322897
+      },
+      {
+        "term": "trial_order_per_step",
+        "estimate_log_odds": -0.1834495018559903,
+        "standard_error": 0.10770333320090943,
+        "odds_ratio": 0.832393909024075,
+        "ci_95": [
+          0.6739872011715977,
+          1.0280308269592382
+        ],
+        "wald_p_two_sided": 0.0885146942758961
+      },
+      {
+        "term": "landmark_duomo",
+        "estimate_log_odds": 0.29835806918568025,
+        "standard_error": 0.339032470836852,
+        "odds_ratio": 1.3476442513764204,
+        "ci_95": [
+          0.6934103159588454,
+          2.6191491335927903
+        ],
+        "wald_p_two_sided": 0.3788441382579907
+      },
+      {
+        "term": "landmark_notre_dame",
+        "estimate_log_odds": -0.3100605702557488,
+        "standard_error": 0.3490278388171908,
+        "odds_ratio": 0.7334025324999643,
+        "ci_95": [
+          0.3700405927097408,
+          1.4535682983819909
+        ],
+        "wald_p_two_sided": 0.3743499087367016
+      },
+      {
+        "term": "landmark_colosseum",
+        "estimate_log_odds": -0.2939407347305266,
+        "standard_error": 0.3842967667761119,
+        "odds_ratio": 0.7453206617642563,
+        "ci_95": [
+          0.35093699855322996,
+          1.582913432162527
+        ],
+        "wald_p_two_sided": 0.4443432774461369
+      },
+      {
+        "term": "design_education",
+        "estimate_log_odds": -0.16210648148008017,
+        "standard_error": 0.4268956100307239,
+        "odds_ratio": 0.8503506531231624,
+        "ci_95": [
+          0.36831876412283304,
+          1.963234849001173
+        ],
+        "wald_p_two_sided": 0.7041433939174564
+      },
+      {
+        "term": "previously_visited",
+        "estimate_log_odds": -0.5541931143927488,
+        "standard_error": 0.4581309562022693,
+        "odds_ratio": 0.5745356587707924,
+        "ci_95": [
+          0.23407509510993765,
+          1.410193694652372
+        ],
+        "wald_p_two_sided": 0.2264006519968486
+      },
+      {
+        "term": "visual_familiarity_centered",
+        "estimate_log_odds": 0.06902083903279121,
+        "standard_error": 0.12507678956418466,
+        "odds_ratio": 1.0714585370752878,
+        "ci_95": [
+          0.838513023658227,
+          1.3691181463860522
+        ],
+        "wald_p_two_sided": 0.5810663966339698
+      },
+      {
+        "term": "spatial_knowledge_centered",
+        "estimate_log_odds": 0.02506780940239478,
+        "standard_error": 0.16510319523758654,
+        "odds_ratio": 1.0253846488873297,
+        "ci_95": [
+          0.741909130054455,
+          1.4171731221269916
+        ],
+        "wald_p_two_sided": 0.8793201061129092
+      }
+    ],
+    "optimization_history": [
+      {
+        "iteration": 0,
+        "nll": 352.21179631671697,
+        "gradient_max": 15.136163510476306
+      },
+      {
+        "iteration": 1,
+        "nll": 351.2399499462213,
+        "gradient_max": 27.37290552801141,
+        "step": 0.03125
+      },
+      {
+        "iteration": 2,
+        "nll": 350.03245127211096,
+        "gradient_max": 27.76383554703443,
+        "step": 0.0078125
+      },
+      {
+        "iteration": 3,
+        "nll": 345.12368771887867,
+        "gradient_max": 22.527573641184514,
+        "step": 0.0078125
+      },
+      {
+        "iteration": 4,
+        "nll": 344.3912431770117,
+        "gradient_max": 13.912785945535687,
+        "step": 0.015625
+      },
+      {
+        "iteration": 5,
+        "nll": 343.80728640897445,
+        "gradient_max": 17.013053711423254,
+        "step": 0.0625
+      },
+      {
+        "iteration": 6,
+        "nll": 343.5922608346357,
+        "gradient_max": 12.424491217188914,
+        "step": 0.03125
+      },
+      {
+        "iteration": 7,
+        "nll": 342.8245368115181,
+        "gradient_max": 7.704941612018955,
+        "step": 0.25
+      },
+      {
+        "iteration": 8,
+        "nll": 342.5045618553754,
+        "gradient_max": 4.277561551191411,
+        "step": 0.03125
+      },
+      {
+        "iteration": 9,
+        "nll": 341.56906222304286,
+        "gradient_max": 3.290774114361738,
+        "step": 0.125
+      },
+      {
+        "iteration": 10,
+        "nll": 340.4335596855984,
+        "gradient_max": 3.250533458754034,
+        "step": 0.125
+      },
+      {
+        "iteration": 20,
+        "nll": 339.82163975252655,
+        "gradient_max": 0.019625467473360914,
+        "step": 1.0
+      }
+    ]
+  },
+  "proportional_odds_sensitivity": {
+    "method": "three threshold-specific logistic mixed models with the primary model covariates and participant random intercept",
+    "purpose": "descriptive sensitivity check for slope heterogeneity across cumulative cutpoints; not an equivalence test",
+    "models": [
+      {
+        "model": "threshold-specific logistic mixed model with participant random intercept",
+        "outcome": "committed density above empty",
+        "threshold": "empty | low/moderate/high",
+        "quadrature_points": 17,
+        "n_trials": 260,
+        "n_participants": 65,
+        "converged": true,
+        "iterations": 22,
+        "negative_log_likelihood": 119.21481498467016,
+        "gradient_max": 1.3878320714866275e-05,
+        "participant_random_intercept_sd": 1.9862300942258364,
+        "coefficients": [
+          {
+            "term": "intercept",
+            "estimate_log_odds": 1.8026110926121666,
+            "standard_error": 0.6069107399026465,
+            "odds_ratio": 6.065464294831677,
+            "ci_95": [
+              1.846123234044337,
+              19.928169709062004
+            ],
+            "wald_p_two_sided": 0.00297662100341572
+          },
+          {
+            "term": "initial_density_per_level",
+            "estimate_log_odds": -0.21252739916258598,
+            "standard_error": 0.26712116749617004,
+            "odds_ratio": 0.8085381627493811,
+            "ci_95": [
+              0.4789901377205747,
+              1.3648171624851053
+            ],
+            "wald_p_two_sided": 0.42625194601987504
+          },
+          {
+            "term": "visit_task",
+            "estimate_log_odds": 0.24682639280398433,
+            "standard_error": 0.3807886077623823,
+            "odds_ratio": 1.279956883762939,
+            "ci_95": [
+              0.6068306208031057,
+              2.6997477848496683
+            ],
+            "wald_p_two_sided": 0.516856931277902
+          },
+          {
+            "term": "visit_x_initial",
+            "estimate_log_odds": 0.15101100331270778,
+            "standard_error": 0.3773894940554505,
+            "odds_ratio": 1.1630094549681311,
+            "ci_95": [
+              0.5550712367243242,
+              2.436788114490308
+            ],
+            "wald_p_two_sided": 0.6890487765647948
+          },
+          {
+            "term": "trial_order_per_step",
+            "estimate_log_odds": -0.19784943059619525,
+            "standard_error": 0.17416606218890807,
+            "odds_ratio": 0.8204933850373463,
+            "ci_95": [
+              0.5832095970895519,
+              1.154318101501803
+            ],
+            "wald_p_two_sided": 0.25596429246602814
+          },
+          {
+            "term": "landmark_duomo",
+            "estimate_log_odds": 0.6501599584242084,
+            "standard_error": 0.5635985742831207,
+            "odds_ratio": 1.9158472604139005,
+            "ci_95": [
+              0.6347824370459034,
+              5.782249966329838
+            ],
+            "wald_p_two_sided": 0.24866955249938133
+          },
+          {
+            "term": "landmark_notre_dame",
+            "estimate_log_odds": -0.19435917059089206,
+            "standard_error": 0.5470583027956115,
+            "odds_ratio": 0.8233621236934294,
+            "ci_95": [
+              0.2817954713824985,
+              2.405734852327575
+            ],
+            "wald_p_two_sided": 0.722379430731177
+          },
+          {
+            "term": "landmark_colosseum",
+            "estimate_log_odds": -0.26158832308528146,
+            "standard_error": 0.6180679605418445,
+            "odds_ratio": 0.769827878848156,
+            "ci_95": [
+              0.22924149327373827,
+              2.585199365911402
+            ],
+            "wald_p_two_sided": 0.6721234237870548
+          },
+          {
+            "term": "design_education",
+            "estimate_log_odds": -0.3939233041645388,
+            "standard_error": 0.6948079356300222,
+            "odds_ratio": 0.6744057783715949,
+            "ci_95": [
+              0.17278247511501982,
+              2.632345401917786
+            ],
+            "wald_p_two_sided": 0.5707462504194178
+          },
+          {
+            "term": "previously_visited",
+            "estimate_log_odds": -1.0456618003650904,
+            "standard_error": 0.7023178945725456,
+            "odds_ratio": 0.35145914660355887,
+            "ci_95": [
+              0.08872801582877683,
+              1.3921592923893602
+            ],
+            "wald_p_two_sided": 0.1365209460139145
+          },
+          {
+            "term": "visual_familiarity_centered",
+            "estimate_log_odds": 0.11388040528604221,
+            "standard_error": 0.20511207082881266,
+            "odds_ratio": 1.1206180968690407,
+            "ci_95": [
+              0.7496627280685717,
+              1.6751331925835375
+            ],
+            "wald_p_two_sided": 0.578750588143075
+          },
+          {
+            "term": "spatial_knowledge_centered",
+            "estimate_log_odds": 0.17661418603999512,
+            "standard_error": 0.2638872875286702,
+            "odds_ratio": 1.1931706624143241,
+            "ci_95": [
+              0.7113466625749398,
+              2.0013536360638455
+            ],
+            "wald_p_two_sided": 0.503317601995681
+          }
+        ],
+        "optimization_history": [
+          {
+            "iteration": 0,
+            "nll": 131.00174580686436,
+            "gradient_max": 7.912134363152744
+          },
+          {
+            "iteration": 1,
+            "nll": 130.3704936053244,
+            "gradient_max": 17.319412324923178,
+            "step": 0.0078125
+          },
+          {
+            "iteration": 2,
+            "nll": 129.94555120815508,
+            "gradient_max": 17.272806265822283,
+            "step": 0.03125
+          },
+          {
+            "iteration": 3,
+            "nll": 127.94220741768717,
+            "gradient_max": 19.384204288286355,
+            "step": 0.0625
+          },
+          {
+            "iteration": 4,
+            "nll": 125.66245593433058,
+            "gradient_max": 22.321829703031423,
+            "step": 0.25
+          },
+          {
+            "iteration": 5,
+            "nll": 124.03786571638443,
+            "gradient_max": 21.781727810576964,
+            "step": 0.0625
+          },
+          {
+            "iteration": 6,
+            "nll": 122.09094471318406,
+            "gradient_max": 14.475736827535,
+            "step": 0.125
+          },
+          {
+            "iteration": 7,
+            "nll": 120.95492072144329,
+            "gradient_max": 10.219658422983002,
+            "step": 0.25
+          },
+          {
+            "iteration": 8,
+            "nll": 119.93538001488554,
+            "gradient_max": 6.4112083961731505,
+            "step": 0.5
+          },
+          {
+            "iteration": 9,
+            "nll": 119.69124821627757,
+            "gradient_max": 3.4145200906721125,
+            "step": 0.125
+          },
+          {
+            "iteration": 10,
+            "nll": 119.56501420997479,
+            "gradient_max": 5.224134503123423,
+            "step": 0.5
+          },
+          {
+            "iteration": 20,
+            "nll": 119.21481498870384,
+            "gradient_max": 0.0001725553033793403,
+            "step": 1.0
+          }
+        ]
+      },
+      {
+        "model": "threshold-specific logistic mixed model with participant random intercept",
+        "outcome": "committed density above low",
+        "threshold": "low | moderate/high",
+        "quadrature_points": 17,
+        "n_trials": 260,
+        "n_participants": 65,
+        "converged": true,
+        "iterations": 23,
+        "negative_log_likelihood": 156.87300731164015,
+        "gradient_max": 4.022027155770047e-05,
+        "participant_random_intercept_sd": 1.6097489031705545,
+        "coefficients": [
+          {
+            "term": "intercept",
+            "estimate_log_odds": -0.02099021434895056,
+            "standard_error": 0.4580398508658593,
+            "odds_ratio": 0.9792285469114325,
+            "ci_95": [
+              0.39902475053049047,
+              2.403080374867635
+            ],
+            "wald_p_two_sided": 0.9634487961131691
+          },
+          {
+            "term": "initial_density_per_level",
+            "estimate_log_odds": -0.1358882905976545,
+            "standard_error": 0.21131942389820985,
+            "odds_ratio": 0.8729401426638366,
+            "ci_95": [
+              0.5769112979935457,
+              1.320869421909787
+            ],
+            "wald_p_two_sided": 0.5201936983691515
+          },
+          {
+            "term": "visit_task",
+            "estimate_log_odds": 0.6949087161656693,
+            "standard_error": 0.3209093916305781,
+            "odds_ratio": 2.0035261760419605,
+            "ci_95": [
+              1.0681603410171379,
+              3.757972454082076
+            ],
+            "wald_p_two_sided": 0.030354319547581412
+          },
+          {
+            "term": "visit_x_initial",
+            "estimate_log_odds": 0.2012949443369304,
+            "standard_error": 0.3069656315325189,
+            "odds_ratio": 1.222985431260582,
+            "ci_95": [
+              0.6700877247508538,
+              2.232085904322076
+            ],
+            "wald_p_two_sided": 0.5119803140913444
+          },
+          {
+            "term": "trial_order_per_step",
+            "estimate_log_odds": -0.2525129844058371,
+            "standard_error": 0.14407242683426852,
+            "odds_ratio": 0.7768461258884555,
+            "ci_95": [
+              0.5857338611700843,
+              1.030314180748143
+            ],
+            "wald_p_two_sided": 0.07965680355985728
+          },
+          {
+            "term": "landmark_duomo",
+            "estimate_log_odds": -0.1434084562911887,
+            "standard_error": 0.4445651232249959,
+            "odds_ratio": 0.8664001100364177,
+            "ci_95": [
+              0.3624966328327663,
+              2.070775512602955
+            ],
+            "wald_p_two_sided": 0.7470122539050073
+          },
+          {
+            "term": "landmark_notre_dame",
+            "estimate_log_odds": -0.44966012034327324,
+            "standard_error": 0.4568487729762326,
+            "odds_ratio": 0.6378449052920607,
+            "ci_95": [
+              0.26052218225051027,
+              1.5616563614373036
+            ],
+            "wald_p_two_sided": 0.3249853812823259
+          },
+          {
+            "term": "landmark_colosseum",
+            "estimate_log_odds": -0.2778548684679559,
+            "standard_error": 0.5132291150410594,
+            "odds_ratio": 0.7574067371381725,
+            "ci_95": [
+              0.27699233138733154,
+              2.0710499911281297
+            ],
+            "wald_p_two_sided": 0.5882418088924071
+          },
+          {
+            "term": "design_education",
+            "estimate_log_odds": 0.03844457724607297,
+            "standard_error": 0.5375784657285844,
+            "odds_ratio": 1.039193131816692,
+            "ci_95": [
+              0.3623336296394552,
+              2.980464071992366
+            ],
+            "wald_p_two_sided": 0.9429884001608757
+          },
+          {
+            "term": "previously_visited",
+            "estimate_log_odds": -0.9243069093902977,
+            "standard_error": 0.5832288069746129,
+            "odds_ratio": 0.3968063465418228,
+            "ci_95": [
+              0.1265124730077551,
+              1.2445830273685135
+            ],
+            "wald_p_two_sided": 0.11300948479918721
+          },
+          {
+            "term": "visual_familiarity_centered",
+            "estimate_log_odds": 0.3989104926085228,
+            "standard_error": 0.17491682799389857,
+            "odds_ratio": 1.4902002287025504,
+            "ci_95": [
+              1.0576820905347046,
+              2.099588091259515
+            ],
+            "wald_p_two_sided": 0.022573761243901324
+          },
+          {
+            "term": "spatial_knowledge_centered",
+            "estimate_log_odds": -0.3139658659564742,
+            "standard_error": 0.2217608135823986,
+            "odds_ratio": 0.7305439641533092,
+            "ci_95": [
+              0.4730240353022692,
+              1.1282608149494837
+            ],
+            "wald_p_two_sided": 0.15683815560026232
+          }
+        ],
+        "optimization_history": [
+          {
+            "iteration": 0,
+            "nll": 172.49836184813861,
+            "gradient_max": 17.212592901927337
+          },
+          {
+            "iteration": 1,
+            "nll": 170.5539776316703,
+            "gradient_max": 32.76869325645748,
+            "step": 0.0078125
+          },
+          {
+            "iteration": 2,
+            "nll": 170.27778578999636,
+            "gradient_max": 29.448008193355687,
+            "step": 0.015625
+          },
+          {
+            "iteration": 3,
+            "nll": 168.60559613832248,
+            "gradient_max": 16.470074537474414,
+            "step": 0.0625
+          },
+          {
+            "iteration": 4,
+            "nll": 166.24938649884345,
+            "gradient_max": 15.579520543847188,
+            "step": 0.125
+          },
+          {
+            "iteration": 5,
+            "nll": 163.15873524806915,
+            "gradient_max": 11.275383354103495,
+            "step": 0.0625
+          },
+          {
+            "iteration": 6,
+            "nll": 161.66648635315437,
+            "gradient_max": 8.571676477231449,
+            "step": 0.125
+          },
+          {
+            "iteration": 7,
+            "nll": 159.2667630812388,
+            "gradient_max": 7.724930556207709,
+            "step": 0.25
+          },
+          {
+            "iteration": 8,
+            "nll": 158.221069210871,
+            "gradient_max": 8.760855354950081,
+            "step": 0.5
+          },
+          {
+            "iteration": 9,
+            "nll": 157.80014725451363,
+            "gradient_max": 2.536306874389993,
+            "step": 0.125
+          },
+          {
+            "iteration": 10,
+            "nll": 157.45319999652733,
+            "gradient_max": 2.3043852841908574,
+            "step": 0.25
+          },
+          {
+            "iteration": 20,
+            "nll": 156.8730074276478,
+            "gradient_max": 0.0032159213958493633,
+            "step": 1.0
+          }
+        ]
+      },
+      {
+        "model": "threshold-specific logistic mixed model with participant random intercept",
+        "outcome": "committed density above moderate",
+        "threshold": "moderate | high",
+        "quadrature_points": 17,
+        "n_trials": 260,
+        "n_participants": 65,
+        "converged": true,
+        "iterations": 22,
+        "negative_log_likelihood": 131.73954484096467,
+        "gradient_max": 5.0996362688238144e-05,
+        "participant_random_intercept_sd": 1.8676690483980931,
+        "coefficients": [
+          {
+            "term": "intercept",
+            "estimate_log_odds": -1.6950658164811558,
+            "standard_error": 0.5605971603319488,
+            "odds_ratio": 0.18358714557017003,
+            "ci_95": [
+              0.06118727296159612,
+              0.550837427249897
+            ],
+            "wald_p_two_sided": 0.0024972131561432254
+          },
+          {
+            "term": "initial_density_per_level",
+            "estimate_log_odds": -0.07849993271759992,
+            "standard_error": 0.2505873157301814,
+            "odds_ratio": 0.9245021221342727,
+            "ci_95": [
+              0.5657279045351818,
+              1.510804340706904
+            ],
+            "wald_p_two_sided": 0.7540802565654926
+          },
+          {
+            "term": "visit_task",
+            "estimate_log_odds": 0.3273313908937667,
+            "standard_error": 0.35682051566926026,
+            "odds_ratio": 1.387261126718931,
+            "ci_95": [
+              0.6893377159511004,
+              2.791800577820112
+            ],
+            "wald_p_two_sided": 0.3589561949168609
+          },
+          {
+            "term": "visit_x_initial",
+            "estimate_log_odds": 0.20143106975031194,
+            "standard_error": 0.35923986918113376,
+            "odds_ratio": 1.2231519219895244,
+            "ci_95": [
+              0.6049157171151278,
+              2.4732381420037215
+            ],
+            "wald_p_two_sided": 0.57499205529792
+          },
+          {
+            "term": "trial_order_per_step",
+            "estimate_log_odds": -0.2142030534786723,
+            "standard_error": 0.16343222967800827,
+            "odds_ratio": 0.8071844667672513,
+            "ci_95": [
+              0.5859479358132486,
+              1.111953338458369
+            ],
+            "wald_p_two_sided": 0.18997479409521165
+          },
+          {
+            "term": "landmark_duomo",
+            "estimate_log_odds": 0.43128018515053057,
+            "standard_error": 0.48155613718412793,
+            "odds_ratio": 1.5392267580258934,
+            "ci_95": [
+              0.5989647637576311,
+              3.9555231893100116
+            ],
+            "wald_p_two_sided": 0.3704680902927609
+          },
+          {
+            "term": "landmark_notre_dame",
+            "estimate_log_odds": -0.35128289533891704,
+            "standard_error": 0.5181078550278814,
+            "odds_ratio": 0.7037846283001555,
+            "ci_95": [
+              0.2549327129798939,
+              1.9429158276390075
+            ],
+            "wald_p_two_sided": 0.49776463252686115
+          },
+          {
+            "term": "landmark_colosseum",
+            "estimate_log_odds": -0.638999625333047,
+            "standard_error": 0.6032066486503007,
+            "odds_ratio": 0.5278201779579484,
+            "ci_95": [
+              0.16182125109256623,
+              1.7216165267452839
+            ],
+            "wald_p_two_sided": 0.28944594983888045
+          },
+          {
+            "term": "design_education",
+            "estimate_log_odds": 0.09770015947204924,
+            "standard_error": 0.6369672551806086,
+            "odds_ratio": 1.1026321217403277,
+            "ci_95": [
+              0.3164048451423989,
+              3.8425378579345186
+            ],
+            "wald_p_two_sided": 0.8780959891073035
+          },
+          {
+            "term": "previously_visited",
+            "estimate_log_odds": 0.06798283427585514,
+            "standard_error": 0.6459760728591287,
+            "odds_ratio": 1.0703469350408519,
+            "ci_95": [
+              0.30176490851263005,
+              3.7964737748935304
+            ],
+            "wald_p_two_sided": 0.9161849878301339
+          },
+          {
+            "term": "visual_familiarity_centered",
+            "estimate_log_odds": -0.15448200463920075,
+            "standard_error": 0.19625360288742508,
+            "odds_ratio": 0.8568589114886243,
+            "ci_95": [
+              0.5832542967671038,
+              1.2588114622851077
+            ],
+            "wald_p_two_sided": 0.4311911365635921
+          },
+          {
+            "term": "spatial_knowledge_centered",
+            "estimate_log_odds": 0.19672239306966907,
+            "standard_error": 0.2415737504927465,
+            "odds_ratio": 1.2174060334395898,
+            "ci_95": [
+              0.7582414099650922,
+              1.9546247814707816
+            ],
+            "wald_p_two_sided": 0.4154520378609865
+          }
+        ],
+        "optimization_history": [
+          {
+            "iteration": 0,
+            "nll": 144.28720980296688,
+            "gradient_max": 12.862760895870904
+          },
+          {
+            "iteration": 1,
+            "nll": 144.15232011365626,
+            "gradient_max": 27.147155947204734,
+            "step": 0.0078125
+          },
+          {
+            "iteration": 2,
+            "nll": 140.63633586434145,
+            "gradient_max": 20.804981607369655,
+            "step": 0.03125
+          },
+          {
+            "iteration": 3,
+            "nll": 135.44506897025892,
+            "gradient_max": 12.942369643553773,
+            "step": 0.03125
+          },
+          {
+            "iteration": 4,
+            "nll": 134.96618767966996,
+            "gradient_max": 12.204182327479883,
+            "step": 0.0625
+          },
+          {
+            "iteration": 5,
+            "nll": 134.76932532813876,
+            "gradient_max": 8.725823896327256,
+            "step": 0.125
+          },
+          {
+            "iteration": 6,
+            "nll": 134.2607129046078,
+            "gradient_max": 8.201554154396717,
+            "step": 0.5
+          },
+          {
+            "iteration": 7,
+            "nll": 132.79422540479766,
+            "gradient_max": 4.382973572347737,
+            "step": 0.25
+          },
+          {
+            "iteration": 8,
+            "nll": 132.3659069330761,
+            "gradient_max": 5.152560283505636,
+            "step": 0.25
+          },
+          {
+            "iteration": 9,
+            "nll": 132.30372927798138,
+            "gradient_max": 3.3929653014297396,
+            "step": 0.25
+          },
+          {
+            "iteration": 10,
+            "nll": 132.2011988705057,
+            "gradient_max": 2.8911795062924734,
+            "step": 0.5
+          },
+          {
+            "iteration": 20,
+            "nll": 131.73954494736032,
+            "gradient_max": 0.0014687309146665937,
+            "step": 1.0
+          }
+        ]
+      }
+    ]
+  },
+  "initial_state_randomization_test": {
+    "observed_match_proportion": 0.27692307692307694,
+    "randomization_reference_mean": 0.24990653846153849,
+    "randomization_reference_95_interval": [
+      0.2076923076923077,
+      0.2923076923076923
+    ],
+    "one_sided_p_more_matching": 0.12867742645147098,
+    "iterations": 50000,
+    "note": "Initial labels were permuted within participant, preserving one use of each randomized initial state."
+  },
+  "initial_to_final": {
+    "overall": {
+      "counts": {
+        "empty": {
+          "empty": 12,
+          "low": 13,
+          "moderate": 22,
+          "high": 18
+        },
+        "low": {
+          "empty": 14,
+          "low": 20,
+          "moderate": 14,
+          "high": 17
+        },
+        "moderate": {
+          "empty": 14,
+          "low": 16,
+          "moderate": 21,
+          "high": 14
+        },
+        "high": {
+          "empty": 16,
+          "low": 11,
+          "moderate": 19,
+          "high": 19
+        }
+      },
+      "row_percent": {
+        "empty": {
+          "empty": 18.461538461538463,
+          "low": 20.0,
+          "moderate": 33.84615384615385,
+          "high": 27.692307692307693
+        },
+        "low": {
+          "empty": 21.53846153846154,
+          "low": 30.76923076923077,
+          "moderate": 21.53846153846154,
+          "high": 26.153846153846157
+        },
+        "moderate": {
+          "empty": 21.53846153846154,
+          "low": 24.615384615384617,
+          "moderate": 32.30769230769231,
+          "high": 21.53846153846154
+        },
+        "high": {
+          "empty": 24.615384615384617,
+          "low": 16.923076923076923,
+          "moderate": 29.230769230769234,
+          "high": 29.230769230769234
+        }
+      }
+    },
+    "feature": {
+      "counts": {
+        "empty": {
+          "empty": 4,
+          "low": 8,
+          "moderate": 10,
+          "high": 7
+        },
+        "low": {
+          "empty": 9,
+          "low": 10,
+          "moderate": 8,
+          "high": 9
+        },
+        "moderate": {
+          "empty": 8,
+          "low": 10,
+          "moderate": 7,
+          "high": 7
+        },
+        "high": {
+          "empty": 9,
+          "low": 7,
+          "moderate": 9,
+          "high": 8
+        }
+      },
+      "row_percent": {
+        "empty": {
+          "empty": 13.793103448275861,
+          "low": 27.586206896551722,
+          "moderate": 34.48275862068966,
+          "high": 24.137931034482758
+        },
+        "low": {
+          "empty": 25.0,
+          "low": 27.77777777777778,
+          "moderate": 22.22222222222222,
+          "high": 25.0
+        },
+        "moderate": {
+          "empty": 25.0,
+          "low": 31.25,
+          "moderate": 21.875,
+          "high": 21.875
+        },
+        "high": {
+          "empty": 27.27272727272727,
+          "low": 21.21212121212121,
+          "moderate": 27.27272727272727,
+          "high": 24.242424242424242
+        }
+      }
+    },
+    "visit": {
+      "counts": {
+        "empty": {
+          "empty": 8,
+          "low": 5,
+          "moderate": 12,
+          "high": 11
+        },
+        "low": {
+          "empty": 5,
+          "low": 10,
+          "moderate": 6,
+          "high": 8
+        },
+        "moderate": {
+          "empty": 6,
+          "low": 6,
+          "moderate": 14,
+          "high": 7
+        },
+        "high": {
+          "empty": 7,
+          "low": 4,
+          "moderate": 10,
+          "high": 11
+        }
+      },
+      "row_percent": {
+        "empty": {
+          "empty": 22.22222222222222,
+          "low": 13.88888888888889,
+          "moderate": 33.33333333333333,
+          "high": 30.555555555555557
+        },
+        "low": {
+          "empty": 17.24137931034483,
+          "low": 34.48275862068966,
+          "moderate": 20.689655172413794,
+          "high": 27.586206896551722
+        },
+        "moderate": {
+          "empty": 18.181818181818183,
+          "low": 18.181818181818183,
+          "moderate": 42.42424242424242,
+          "high": 21.21212121212121
+        },
+        "high": {
+          "empty": 21.875,
+          "low": 12.5,
+          "moderate": 31.25,
+          "high": 34.375
+        }
+      }
+    }
+  },
+  "first_participant_initiated_to_final": {
+    "overall": {
+      "counts": {
+        "empty": {
+          "empty": 32,
+          "low": 28,
+          "moderate": 26,
+          "high": 33
+        },
+        "low": {
+          "empty": 14,
+          "low": 24,
+          "moderate": 19,
+          "high": 17
+        },
+        "moderate": {
+          "empty": 8,
+          "low": 4,
+          "moderate": 24,
+          "high": 12
+        },
+        "high": {
+          "empty": 2,
+          "low": 4,
+          "moderate": 7,
+          "high": 6
+        }
+      },
+      "row_percent": {
+        "empty": {
+          "empty": 26.89075630252101,
+          "low": 23.52941176470588,
+          "moderate": 21.84873949579832,
+          "high": 27.73109243697479
+        },
+        "low": {
+          "empty": 18.91891891891892,
+          "low": 32.432432432432435,
+          "moderate": 25.675675675675674,
+          "high": 22.972972972972975
+        },
+        "moderate": {
+          "empty": 16.666666666666664,
+          "low": 8.333333333333332,
+          "moderate": 50.0,
+          "high": 25.0
+        },
+        "high": {
+          "empty": 10.526315789473683,
+          "low": 21.052631578947366,
+          "moderate": 36.84210526315789,
+          "high": 31.57894736842105
+        }
+      }
+    },
+    "feature": {
+      "counts": {
+        "empty": {
+          "empty": 18,
+          "low": 17,
+          "moderate": 11,
+          "high": 16
+        },
+        "low": {
+          "empty": 4,
+          "low": 14,
+          "moderate": 9,
+          "high": 6
+        },
+        "moderate": {
+          "empty": 6,
+          "low": 1,
+          "moderate": 12,
+          "high": 8
+        },
+        "high": {
+          "empty": 2,
+          "low": 3,
+          "moderate": 2,
+          "high": 1
+        }
+      },
+      "row_percent": {
+        "empty": {
+          "empty": 29.03225806451613,
+          "low": 27.419354838709676,
+          "moderate": 17.741935483870968,
+          "high": 25.806451612903224
+        },
+        "low": {
+          "empty": 12.121212121212121,
+          "low": 42.42424242424242,
+          "moderate": 27.27272727272727,
+          "high": 18.181818181818183
+        },
+        "moderate": {
+          "empty": 22.22222222222222,
+          "low": 3.7037037037037033,
+          "moderate": 44.44444444444444,
+          "high": 29.629629629629626
+        },
+        "high": {
+          "empty": 25.0,
+          "low": 37.5,
+          "moderate": 25.0,
+          "high": 12.5
+        }
+      }
+    },
+    "visit": {
+      "counts": {
+        "empty": {
+          "empty": 14,
+          "low": 11,
+          "moderate": 15,
+          "high": 17
+        },
+        "low": {
+          "empty": 10,
+          "low": 10,
+          "moderate": 10,
+          "high": 11
+        },
+        "moderate": {
+          "empty": 2,
+          "low": 3,
+          "moderate": 12,
+          "high": 4
+        },
+        "high": {
+          "empty": 0,
+          "low": 1,
+          "moderate": 5,
+          "high": 5
+        }
+      },
+      "row_percent": {
+        "empty": {
+          "empty": 24.561403508771928,
+          "low": 19.298245614035086,
+          "moderate": 26.31578947368421,
+          "high": 29.82456140350877
+        },
+        "low": {
+          "empty": 24.390243902439025,
+          "low": 24.390243902439025,
+          "moderate": 24.390243902439025,
+          "high": 26.82926829268293
+        },
+        "moderate": {
+          "empty": 9.523809523809524,
+          "low": 14.285714285714285,
+          "moderate": 57.14285714285714,
+          "high": 19.047619047619047
+        },
+        "high": {
+          "empty": 0.0,
+          "low": 9.090909090909092,
+          "moderate": 45.45454545454545,
+          "high": 45.45454545454545
+        }
+      }
+    }
+  },
+  "trace_summary": {
+    "overall": {
+      "n": 260,
+      "initial_match": {
+        "count": 72,
+        "proportion": 0.27692307692307694
+      },
+      "changed_from_initial": {
+        "count": 188,
+        "proportion": 0.7230769230769231
+      },
+      "first_participant_initiated_match": {
+        "count": 86,
+        "proportion": 0.33076923076923076
+      },
+      "changed_after_first_participant_initiated_state": {
+        "count": 174,
+        "proportion": 0.6692307692307692
+      },
+      "viewed_all_four": {
+        "count": 204,
+        "proportion": 0.7846153846153846
+      },
+      "revisited_any_state": {
+        "count": 207,
+        "proportion": 0.7961538461538461
+      },
+      "returned_to_initial": {
+        "count": 177,
+        "proportion": 0.6807692307692308
+      },
+      "switch_count": {
+        "mean": 4.95,
+        "median": 5.0,
+        "iqr": [
+          4.0,
+          6.0
+        ]
+      },
+      "unique_levels_viewed": {
+        "mean": 3.5884615384615386,
+        "median": 4.0,
+        "iqr": [
+          4.0,
+          4.0
+        ]
+      },
+      "selection_time_s": {
+        "mean": 15.92708846153846,
+        "median": 13.253499999999999,
+        "iqr": [
+          8.444749999999999,
+          20.002750000000002
+        ]
+      },
+      "adjacent_transitions": {
+        "mean": 3.896153846153846,
+        "median": 3.0,
+        "iqr": [
+          3.0,
+          5.0
+        ]
+      },
+      "skip_transitions": {
+        "mean": 1.0538461538461539,
+        "median": 1.0,
+        "iqr": [
+          0.0,
+          2.0
+        ]
+      },
+      "return_transitions": {
+        "mean": 2.3615384615384616,
+        "median": 2.0,
+        "iqr": [
+          1.0,
+          3.0
+        ]
+      },
+      "direction_reversals": {
+        "mean": 2.0115384615384615,
+        "median": 2.0,
+        "iqr": [
+          1.0,
+          3.0
+        ]
+      }
+    },
+    "feature": {
+      "n": 130,
+      "initial_match": {
+        "count": 29,
+        "proportion": 0.2230769230769231
+      },
+      "changed_from_initial": {
+        "count": 101,
+        "proportion": 0.7769230769230769
+      },
+      "first_participant_initiated_match": {
+        "count": 45,
+        "proportion": 0.34615384615384615
+      },
+      "changed_after_first_participant_initiated_state": {
+        "count": 85,
+        "proportion": 0.6538461538461539
+      },
+      "viewed_all_four": {
+        "count": 99,
+        "proportion": 0.7615384615384615
+      },
+      "revisited_any_state": {
+        "count": 102,
+        "proportion": 0.7846153846153846
+      },
+      "returned_to_initial": {
+        "count": 89,
+        "proportion": 0.6846153846153846
+      },
+      "switch_count": {
+        "mean": 4.930769230769231,
+        "median": 5.0,
+        "iqr": [
+          3.0,
+          5.0
+        ]
+      },
+      "unique_levels_viewed": {
+        "mean": 3.576923076923077,
+        "median": 4.0,
+        "iqr": [
+          4.0,
+          4.0
+        ]
+      },
+      "selection_time_s": {
+        "mean": 16.92486153846154,
+        "median": 13.708,
+        "iqr": [
+          8.783,
+          20.88775
+        ]
+      },
+      "adjacent_transitions": {
+        "mean": 3.8153846153846156,
+        "median": 3.0,
+        "iqr": [
+          2.25,
+          4.0
+        ]
+      },
+      "skip_transitions": {
+        "mean": 1.1153846153846154,
+        "median": 1.0,
+        "iqr": [
+          0.0,
+          2.0
+        ]
+      },
+      "return_transitions": {
+        "mean": 2.353846153846154,
+        "median": 2.0,
+        "iqr": [
+          1.0,
+          3.0
+        ]
+      },
+      "direction_reversals": {
+        "mean": 2.023076923076923,
+        "median": 2.0,
+        "iqr": [
+          1.0,
+          2.0
+        ]
+      }
+    },
+    "visit": {
+      "n": 130,
+      "initial_match": {
+        "count": 43,
+        "proportion": 0.33076923076923076
+      },
+      "changed_from_initial": {
+        "count": 87,
+        "proportion": 0.6692307692307692
+      },
+      "first_participant_initiated_match": {
+        "count": 41,
+        "proportion": 0.3153846153846154
+      },
+      "changed_after_first_participant_initiated_state": {
+        "count": 89,
+        "proportion": 0.6846153846153846
+      },
+      "viewed_all_four": {
+        "count": 105,
+        "proportion": 0.8076923076923077
+      },
+      "revisited_any_state": {
+        "count": 105,
+        "proportion": 0.8076923076923077
+      },
+      "returned_to_initial": {
+        "count": 88,
+        "proportion": 0.676923076923077
+      },
+      "switch_count": {
+        "mean": 4.969230769230769,
+        "median": 5.0,
+        "iqr": [
+          4.0,
+          6.0
+        ]
+      },
+      "unique_levels_viewed": {
+        "mean": 3.6,
+        "median": 4.0,
+        "iqr": [
+          4.0,
+          4.0
+        ]
+      },
+      "selection_time_s": {
+        "mean": 14.929315384615384,
+        "median": 12.897,
+        "iqr": [
+          7.921,
+          19.61025
+        ]
+      },
+      "adjacent_transitions": {
+        "mean": 3.976923076923077,
+        "median": 4.0,
+        "iqr": [
+          3.0,
+          5.0
+        ]
+      },
+      "skip_transitions": {
+        "mean": 0.9923076923076923,
+        "median": 1.0,
+        "iqr": [
+          0.0,
+          1.75
+        ]
+      },
+      "return_transitions": {
+        "mean": 2.3692307692307693,
+        "median": 2.0,
+        "iqr": [
+          1.0,
+          3.0
+        ]
+      },
+      "direction_reversals": {
+        "mean": 2.0,
+        "median": 2.0,
+        "iqr": [
+          1.0,
+          3.0
+        ]
+      }
+    }
+  },
+  "paired_trace_comparisons": {
+    "initial_match": {
+      "participants": 65,
+      "visit_minus_feature": 0.1076923076923077,
+      "bootstrap_95_ci": [
+        -0.007692307692307693,
+        0.2230769230769231
+      ],
+      "sign_flip_p_two_sided": 0.09889670344321856
+    },
+    "changed_from_initial": {
+      "participants": 65,
+      "visit_minus_feature": -0.1076923076923077,
+      "bootstrap_95_ci": [
+        -0.2230769230769231,
+        0.007692307692307693
+      ],
+      "sign_flip_p_two_sided": 0.0986300456651445
+    },
+    "first_participant_initiated_match": {
+      "participants": 65,
+      "visit_minus_feature": -0.03076923076923077,
+      "bootstrap_95_ci": [
+        -0.13846153846153847,
+        0.07692307692307693
+      ],
+      "sign_flip_p_two_sided": 0.6877770740975301
+    },
+    "changed_after_first_participant_initiated_state": {
+      "participants": 65,
+      "visit_minus_feature": 0.03076923076923077,
+      "bootstrap_95_ci": [
+        -0.07692307692307693,
+        0.14615384615384616
+      ],
+      "sign_flip_p_two_sided": 0.6861104629845671
+    },
+    "viewed_all_four": {
+      "participants": 65,
+      "visit_minus_feature": 0.046153846153846156,
+      "bootstrap_95_ci": [
+        -0.023076923076923078,
+        0.11538461538461539
+      ],
+      "sign_flip_p_two_sided": 0.26172460917969403
+    },
+    "revisited_any_state": {
+      "participants": 65,
+      "visit_minus_feature": 0.023076923076923078,
+      "bootstrap_95_ci": [
+        -0.046153846153846156,
+        0.09230769230769231
+      ],
+      "sign_flip_p_two_sided": 0.6775107496416786
+    },
+    "returned_to_initial": {
+      "participants": 65,
+      "visit_minus_feature": -0.007692307692307693,
+      "bootstrap_95_ci": [
+        -0.1076923076923077,
+        0.08461538461538462
+      ],
+      "sign_flip_p_two_sided": 1.0
+    },
+    "switch_count": {
+      "participants": 65,
+      "visit_minus_feature": 0.038461538461538464,
+      "bootstrap_95_ci": [
+        -0.6461538461538462,
+        0.6923076923076923
+      ],
+      "sign_flip_p_two_sided": 0.931402286590447
+    },
+    "unique_levels_viewed": {
+      "participants": 65,
+      "visit_minus_feature": 0.023076923076923078,
+      "bootstrap_95_ci": [
+        -0.11538461538461539,
+        0.16153846153846155
+      ],
+      "sign_flip_p_two_sided": 0.8312389587013767
+    },
+    "selection_time_s": {
+      "participants": 65,
+      "visit_minus_feature": -1.9955461538461543,
+      "bootstrap_95_ci": [
+        -3.715673846153845,
+        -0.23492653846154032
+      ],
+      "sign_flip_p_two_sided": 0.0296990100329989
+    },
+    "adjacent_transitions": {
+      "participants": 65,
+      "visit_minus_feature": 0.16153846153846155,
+      "bootstrap_95_ci": [
+        -0.4461538461538462,
+        0.7384615384615385
+      ],
+      "sign_flip_p_two_sided": 0.6276790773640879
+    },
+    "skip_transitions": {
+      "participants": 65,
+      "visit_minus_feature": -0.12307692307692308,
+      "bootstrap_95_ci": [
+        -0.35384615384615387,
+        0.1
+      ],
+      "sign_flip_p_two_sided": 0.3254224859171361
+    },
+    "return_transitions": {
+      "participants": 65,
+      "visit_minus_feature": 0.015384615384615385,
+      "bootstrap_95_ci": [
+        -0.6384615384615384,
+        0.6384615384615384
+      ],
+      "sign_flip_p_two_sided": 0.9811339622012599
+    },
+    "direction_reversals": {
+      "participants": 65,
+      "visit_minus_feature": -0.023076923076923078,
+      "bootstrap_95_ci": [
+        -0.4,
+        0.34615384615384615
+      ],
+      "sign_flip_p_two_sided": 0.9370354321522616
+    }
+  },
+  "dwell_summary": {
+    "overall": {
+      "empty": {
+        "mean_share": 0.217107974457472,
+        "median_share": 0.14875763653682367,
+        "share_iqr": [
+          0.06346572629675036,
+          0.316015003328329
+        ],
+        "zero_dwell_proportion": 0.13846153846153847,
+        "conditional_positive_median_s": 2.4715
+      },
+      "low": {
+        "mean_share": 0.2539148640424205,
+        "median_share": 0.18328730461228243,
+        "share_iqr": [
+          0.08828775849500797,
+          0.32933276235965814
+        ],
+        "zero_dwell_proportion": 0.09230769230769231,
+        "conditional_positive_median_s": 2.769
+      },
+      "moderate": {
+        "mean_share": 0.2503441756415222,
+        "median_share": 0.17174184155109146,
+        "share_iqr": [
+          0.07884173472303993,
+          0.37495877146178197
+        ],
+        "zero_dwell_proportion": 0.08846153846153847,
+        "conditional_positive_median_s": 2.94
+      },
+      "high": {
+        "mean_share": 0.2786329858585853,
+        "median_share": 0.21886141804294984,
+        "share_iqr": [
+          0.09750864847934236,
+          0.4220149299148925
+        ],
+        "zero_dwell_proportion": 0.09230769230769231,
+        "conditional_positive_median_s": 3.1755
+      }
+    },
+    "feature": {
+      "empty": {
+        "mean_share": 0.22560649816245754,
+        "median_share": 0.16407809632018105,
+        "share_iqr": [
+          0.06515363172805018,
+          0.32820751023787786
+        ],
+        "zero_dwell_proportion": 0.14615384615384616,
+        "conditional_positive_median_s": 2.748
+      },
+      "low": {
+        "mean_share": 0.2592476811410796,
+        "median_share": 0.17518668346992206,
+        "share_iqr": [
+          0.08255979955258835,
+          0.33471191026900526
+        ],
+        "zero_dwell_proportion": 0.07692307692307693,
+        "conditional_positive_median_s": 2.694
+      },
+      "moderate": {
+        "mean_share": 0.24065118884965078,
+        "median_share": 0.15452164001846092,
+        "share_iqr": [
+          0.0777905106441145,
+          0.36974867818247
+        ],
+        "zero_dwell_proportion": 0.08461538461538462,
+        "conditional_positive_median_s": 2.749
+      },
+      "high": {
+        "mean_share": 0.274494631846812,
+        "median_share": 0.2310077548508384,
+        "share_iqr": [
+          0.09091491376379024,
+          0.41644842019343253
+        ],
+        "zero_dwell_proportion": 0.11538461538461539,
+        "conditional_positive_median_s": 3.286
+      }
+    },
+    "visit": {
+      "empty": {
+        "mean_share": 0.20860945075248646,
+        "median_share": 0.13371165530756612,
+        "share_iqr": [
+          0.062018825791539126,
+          0.27570324875869673
+        ],
+        "zero_dwell_proportion": 0.13076923076923078,
+        "conditional_positive_median_s": 2.205
+      },
+      "low": {
+        "mean_share": 0.24858204694376126,
+        "median_share": 0.18613707845610444,
+        "share_iqr": [
+          0.09163050867824744,
+          0.32182986819283493
+        ],
+        "zero_dwell_proportion": 0.1076923076923077,
+        "conditional_positive_median_s": 2.8765
+      },
+      "moderate": {
+        "mean_share": 0.26003716243339364,
+        "median_share": 0.18461029909241033,
+        "share_iqr": [
+          0.08078762467369781,
+          0.3806659775883283
+        ],
+        "zero_dwell_proportion": 0.09230769230769231,
+        "conditional_positive_median_s": 3.0735
+      },
+      "high": {
+        "mean_share": 0.28277133987035863,
+        "median_share": 0.20702756035682188,
+        "share_iqr": [
+          0.11526626217857447,
+          0.42349690592469896
+        ],
+        "zero_dwell_proportion": 0.06923076923076923,
+        "conditional_positive_median_s": 3.172
+      }
+    },
+    "paired_task_differences": {
+      "empty": {
+        "participants": 65,
+        "visit_minus_feature": -0.01699704740997108,
+        "bootstrap_95_ci": [
+          -0.07362918895612484,
+          0.040690822884412385
+        ],
+        "sign_flip_p_two_sided": 0.5701143295223493
+      },
+      "low": {
+        "participants": 65,
+        "visit_minus_feature": -0.010665634197318313,
+        "bootstrap_95_ci": [
+          -0.07075498386133347,
+          0.049092502569206484
+        ],
+        "sign_flip_p_two_sided": 0.7287757074764174
+      },
+      "moderate": {
+        "participants": 65,
+        "visit_minus_feature": 0.01938597358374285,
+        "bootstrap_95_ci": [
+          -0.0337257187575759,
+          0.07236967458662924
+        ],
+        "sign_flip_p_two_sided": 0.4866837772074264
+      },
+      "high": {
+        "participants": 65,
+        "visit_minus_feature": 0.008276708023546539,
+        "bootstrap_95_ci": [
+          -0.05040002177376801,
+          0.06704352219615471
+        ],
+        "sign_flip_p_two_sided": 0.7868737708743042
+      }
+    }
+  },
+  "transition_counts_overall": {
+    "empty->high": 22,
+    "empty->low": 222,
+    "empty->moderate": 25,
+    "high->empty": 103,
+    "high->low": 62,
+    "high->moderate": 111,
+    "low->empty": 109,
+    "low->high": 14,
+    "low->moderate": 247,
+    "moderate->empty": 48,
+    "moderate->high": 243,
+    "moderate->low": 81
+  },
+  "transition_counts_by_task": {
+    "visit": {
+      "empty->high": 8,
+      "empty->low": 113,
+      "empty->moderate": 11,
+      "high->empty": 48,
+      "high->low": 31,
+      "high->moderate": 60,
+      "low->empty": 52,
+      "low->high": 9,
+      "low->moderate": 126,
+      "moderate->empty": 22,
+      "moderate->high": 127,
+      "moderate->low": 39
+    },
+    "feature": {
+      "empty->high": 14,
+      "empty->low": 109,
+      "empty->moderate": 14,
+      "high->empty": 55,
+      "high->low": 31,
+      "high->moderate": 51,
+      "low->empty": 57,
+      "low->high": 5,
+      "low->moderate": 121,
+      "moderate->empty": 26,
+      "moderate->high": 116,
+      "moderate->low": 42
+    }
+  },
+  "feature_accuracy_by_landmark": [
+    {
+      "landmark_id": "cologne",
+      "sum": 31.0,
+      "count": 34,
+      "mean": 0.9117647058823529
+    },
+    {
+      "landmark_id": "colosseum",
+      "sum": 12.0,
+      "count": 33,
+      "mean": 0.36363636363636365
+    },
+    {
+      "landmark_id": "duomo",
+      "sum": 28.0,
+      "count": 32,
+      "mean": 0.875
+    },
+    {
+      "landmark_id": "notre_dame",
+      "sum": 23.0,
+      "count": 31,
+      "mean": 0.7419354838709677
+    }
+  ],
+  "feature_accuracy_mixed_model": {
+    "model": "logistic mixed model with participant random intercept",
+    "outcome": "feature AOI accuracy",
+    "landmark_handling": "fixed effects (four target scenes; Cologne reference)",
+    "quadrature_points": 17,
+    "n_trials": 130,
+    "n_participants": 65,
+    "converged": true,
+    "iterations": 27,
+    "negative_log_likelihood": 51.37258740254122,
+    "gradient_max": 8.47364844958065e-05,
+    "participant_random_intercept_sd": 3.078692523674326,
+    "coefficients": [
+      {
+        "term": "intercept",
+        "estimate_log_odds": 4.309380485437742,
+        "standard_error": 2.045030114049506,
+        "odds_ratio": 74.39438625554214,
+        "ci_95": [
+          1.351472965202884,
+          4095.179740060842
+        ],
+        "wald_p_two_sided": 0.03509630562616203
+      },
+      {
+        "term": "committed_density_per_level",
+        "estimate_log_odds": 0.1847125214660296,
+        "standard_error": 0.4662846887873817,
+        "odds_ratio": 1.202872590369054,
+        "ci_95": [
+          0.4823001300275036,
+          3.000004309720271
+        ],
+        "wald_p_two_sided": 0.69200411651825
+      },
+      {
+        "term": "initial_density_per_level",
+        "estimate_log_odds": 0.06570220666403942,
+        "standard_error": 0.42530523353993416,
+        "odds_ratio": 1.0679086537292626,
+        "ci_95": [
+          0.4639953538381686,
+          2.4578455005556004
+        ],
+        "wald_p_two_sided": 0.8772293253834802
+      },
+      {
+        "term": "trial_order_per_step",
+        "estimate_log_odds": -0.4486956572524977,
+        "standard_error": 0.3957901958796441,
+        "odds_ratio": 0.6384603799144235,
+        "ci_95": [
+          0.29392513329466025,
+          1.3868553946076425
+        ],
+        "wald_p_two_sided": 0.2569328010830989
+      },
+      {
+        "term": "landmark_duomo",
+        "estimate_log_odds": -1.0036561279667549,
+        "standard_error": 1.4788061374606183,
+        "odds_ratio": 0.36653688263661277,
+        "ci_95": [
+          0.020200197035929433,
+          6.650889894489808
+        ],
+        "wald_p_two_sided": 0.4973320792193471
+      },
+      {
+        "term": "landmark_notre_dame",
+        "estimate_log_odds": -3.5058766256073524,
+        "standard_error": 1.9104548982799243,
+        "odds_ratio": 0.03002044511492734,
+        "ci_95": [
+          0.0007099617590590401,
+          1.2694023493502264
+        ],
+        "wald_p_two_sided": 0.0664908086739279
+      },
+      {
+        "term": "landmark_colosseum",
+        "estimate_log_odds": -7.812665555976163,
+        "standard_error": 3.323481181253169,
+        "odds_ratio": 0.00040457818344536654,
+        "ci_95": [
+          5.998603097559104e-07,
+          0.2728693728487508
+        ],
+        "wald_p_two_sided": 0.018735735689506827
+      },
+      {
+        "term": "design_education",
+        "estimate_log_odds": 3.366521261487149,
+        "standard_error": 1.7432258507106868,
+        "odds_ratio": 28.977546210641144,
+        "ci_95": [
+          0.9510975458975507,
+          882.8728325625315
+        ],
+        "wald_p_two_sided": 0.05345807591908289
+      },
+      {
+        "term": "previously_visited",
+        "estimate_log_odds": -1.776548819233553,
+        "standard_error": 1.6589013614645416,
+        "odds_ratio": 0.16922115345013333,
+        "ci_95": [
+          0.006552322138154217,
+          4.3703282853337
+        ],
+        "wald_p_two_sided": 0.2842058974329773
+      },
+      {
+        "term": "visual_familiarity_centered",
+        "estimate_log_odds": 0.756536646687664,
+        "standard_error": 0.5468270656644022,
+        "odds_ratio": 2.130883423788956,
+        "ci_95": [
+          0.729624897281927,
+          6.223285667325619
+        ],
+        "wald_p_two_sided": 0.16651082209444015
+      },
+      {
+        "term": "spatial_knowledge_centered",
+        "estimate_log_odds": -0.6276618666654477,
+        "standard_error": 0.5979596420210535,
+        "odds_ratio": 0.5338385285902271,
+        "ci_95": [
+          0.16535820174111343,
+          1.723431747604222
+        ],
+        "wald_p_two_sided": 0.2938686542751934
+      }
+    ],
+    "optimization_history": [
+      {
+        "iteration": 0,
+        "nll": 76.58128331579391,
+        "gradient_max": 13.678537522565646
+      },
+      {
+        "iteration": 1,
+        "nll": 75.72386442570894,
+        "gradient_max": 24.941053818494648,
+        "step": 0.0078125
+      },
+      {
+        "iteration": 2,
+        "nll": 65.5913464523238,
+        "gradient_max": 14.072097178541297,
+        "step": 0.125
+      },
+      {
+        "iteration": 3,
+        "nll": 61.23142832424951,
+        "gradient_max": 17.153935976921275,
+        "step": 0.125
+      },
+      {
+        "iteration": 4,
+        "nll": 57.53304798444371,
+        "gradient_max": 13.120214252104743,
+        "step": 0.25
+      },
+      {
+        "iteration": 5,
+        "nll": 56.508018342762604,
+        "gradient_max": 8.253823629011947,
+        "step": 0.125
+      },
+      {
+        "iteration": 6,
+        "nll": 54.098728509446396,
+        "gradient_max": 4.809499413482854,
+        "step": 1.0
+      },
+      {
+        "iteration": 7,
+        "nll": 53.388865204549646,
+        "gradient_max": 2.6084573413243106,
+        "step": 0.125
+      },
+      {
+        "iteration": 8,
+        "nll": 52.93787278515716,
+        "gradient_max": 3.1157699906358967,
+        "step": 0.5
+      },
+      {
+        "iteration": 9,
+        "nll": 52.47383519091614,
+        "gradient_max": 3.248318025406149,
+        "step": 0.25
+      },
+      {
+        "iteration": 10,
+        "nll": 52.2669673988848,
+        "gradient_max": 2.124726288599277,
+        "step": 1.0
+      },
+      {
+        "iteration": 20,
+        "nll": 51.37271704067905,
+        "gradient_max": 0.05866019527900334,
+        "step": 1.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+variable,description,allowed_values_or_unit
+participant_id,Pseudonymous participant code used consistently across the two subjective-rating source workbooks. Do not assume it maps to the P01-P20 codes in the legacy standalone demographics CSV or to legacy EEG filename labels.,P01-P20
+condition,Crowd condition corresponding to the source workbook.,empty | crowded
+image_order,Image position within the original source workbook. Specific landmark identity is intentionally not inferred from the workbook alone.,1-4
+visual_appeal,Response to: 'This image is visually appealing.',1-5
+aesthetic_beauty,Response to: 'I find the space in this image aesthetically beautiful.',1-5
+pleasant_to_be,Response to: 'I would find it pleasant to be in this space.',1-5

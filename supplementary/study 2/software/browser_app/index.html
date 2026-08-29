@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Study 2 — Etkileşimli İnsan Yoğunluğu Temsili</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="eyebrow">INTERACTIVE SPATIAL REPRESENTATION STUDY</div>
+      <h1>Study 2 — Etkileşimli İnsan Yoğunluğu Temsili</h1>
+    </div>
+    <div class="session-meta">
+      <span id="participant-chip" class="chip hidden"></span>
+      <span id="program-chip" class="chip chip-soft hidden"></span>
+    </div>
+  </header>
+
+  <main id="app" class="app-shell" aria-live="polite"></main>
+
+  <div id="focus-overlay" class="focus-overlay hidden">
+    <div class="focus-card">
+      <h2>Deney ekranına dönün</h2>
+      <p>Bu süreli bölümde pencereyi tam ekran ve aktif tutmanız gerekir.</p>
+      <button id="focus-return-btn" class="btn primary" type="button">Tam ekrana dön ve devam et</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span id="version-label"></span>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

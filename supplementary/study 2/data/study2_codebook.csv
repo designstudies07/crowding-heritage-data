@@ -1,0 +1,50 @@
+variable,type,description,allowed_values_or_unit
+record_id,text,Public row identifier: participant code plus trial order.,P###_T1–P###_T4
+participant_id,text,Randomized public participant code; not the internal study code.,P001–P065
+program_code,categorical,Counterbalancing program assigned to the participant.,A1–D4
+main_group,categorical,Main counterbalancing group.,A–D
+order_variant,integer,Within-group order variant.,1–4
+age_group,categorical,Coarsened age group for public release.,18-34; 35-64
+design_education,categorical,Whether the participant reported design/architecture education.,yes; no
+digital_use,integer,Self-reported digital technology use/familiarity score.,1–5
+crowd_discomfort,integer,Self-reported discomfort with crowds.,1–7
+study_duration_min,number,"Total study duration in minutes, rounded to the nearest 0.1 minute.",minutes; >0
+sensitivity_focus_or_reload_flag,boolean,True when a focus-loss or during-trial reload event was observed; intended for sensitivity analysis.,true; false
+final_usefulness,integer,Final interface usefulness rating.,1–7
+final_ease,integer,Final ease-of-use rating.,1–7
+final_representational_value,integer,Final representational-value rating.,1–7
+final_future_preference,integer,Preference for using this control in future platforms.,1–7
+trial_order,integer,Trial position within participant.,1–4
+landmark_id,categorical,Landmark/building shown in the trial.,notre_dame; duomo; colosseum; cologne
+task_type,categorical,Task assigned for the trial.,feature; visit
+initial_density,ordinal,Density shown when the image first appeared.,empty; low; moderate; high
+first_user_selected_density,ordinal,First density actively selected by the participant.,empty; low; moderate; high
+committed_density,ordinal,Density locked as the participant's final choice.,empty; low; moderate; high
+density_sequence,text,Ordered sequence of viewed/selected density states during the trial.,Serialized sequence
+switch_count,integer,Number of density changes before commitment.,0 or greater
+unique_levels_viewed,integer,Number of distinct density levels viewed.,1–4
+all_density_levels_clicked,binary,Whether all four density levels were actively clicked.,0; 1
+selection_time_s,number,"Time from task start to density commitment, seconds.",>0
+localization_time_s,number,"Feature-task time from commitment to target click, seconds; blank for visit task.",>0 or blank
+time_empty_s,number,"Time spent viewing Empty density before commitment, seconds.",0 or greater
+time_low_s,number,"Time spent viewing Low density before commitment, seconds.",0 or greater
+time_moderate_s,number,"Time spent viewing Moderate density before commitment, seconds.",0 or greater
+time_high_s,number,"Time spent viewing High density before commitment, seconds.",0 or greater
+accuracy,binary,Whether the feature-task target click fell within the AOI; blank for visit task.,0; 1; blank
+aoi_distance,number,Distance between click and AOI reference point; blank for visit task.,0 or greater; blank
+click_x,number,Normalized/recorded horizontal click coordinate; blank for visit task.,number or blank
+click_y,number,Normalized/recorded vertical click coordinate; blank for visit task.,number or blank
+familiarity_visited,categorical,Whether the participant reported physically visiting the shown landmark.,yes; no
+familiarity_visual,integer,Self-reported visual familiarity with the shown landmark.,1–7
+familiarity_spatial,integer,Self-reported spatial knowledge of the shown landmark.,1–7
+rating_answer_confidence,integer,Feature-task answer confidence; blank for visit task.,1–7; blank
+rating_comparison_benefit,integer,Feature-task rating of comparison benefit; blank for visit task.,1–7; blank
+rating_control_usefulness,integer,Trial-level usefulness rating for density control.,1–7
+rating_ideal_density,ordinal,Feature-task ideal-density response; blank for visit task.,empty; low; moderate; high; blank
+rating_aesthetic_appeal,integer,Visit-task aesthetic-appeal rating; blank for feature task.,1–7; blank
+rating_expected_comfort,integer,Visit-task expected-comfort rating; blank for feature task.,1–7; blank
+rating_self_location_imagery,integer,Visit-task self-location imagery rating; blank for feature task.,1–7; blank
+rating_informational_adequacy,integer,Visit-task informational-adequacy rating; blank for feature task.,1–7; blank
+rating_representational_realism,integer,Visit-task representational-realism rating; blank for feature task.,1–7; blank
+review_selection_time_3iqr,boolean,Review flag for selection time beyond the 3×IQR rule; not an automatic exclusion.,true; false
+review_localization_time_3iqr,boolean,Review flag for localization time beyond the 3×IQR rule; not an automatic exclusion.,true; false
